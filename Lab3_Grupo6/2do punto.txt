@@ -1,0 +1,39 @@
+
+1. Cuando se toma un intervalo en el que no hay una raíz sucede lo siguiente, por ejemplo el intervalo [0,28]:
+la funcion no cambia de signo
+el intervalo es [ 0 , 28 ]
+el intervalo es [ 0 , 28 ]
+x 2 = 14.0 es excelente aproximacion
+Tiempo: 0.0025124549865722656 Segundos
+
+Nuestro programa de esta manera devuelve un aviso informando que la funci[on no cambia designo al evaluar a y b por lo tanto no hay raiz.
+
+2. Al evaluar nuestro código con el intervalo [-35,0] en el que se encuentran dos raíces, el programa devuelve lo siguiente:
+el intervalo es [ -17.5 , 0 ]
+el intervalo es [ -8.75 , 0 ]
+el intervalo es [ -4.375 , 0 ]
+el intervalo es [ -4.375 , -2.1875 ]
+el intervalo es [ -3.28125 , -2.1875 ]
+el intervalo es [ -2.734375 , -2.1875 ]
+el intervalo es [ -2.734375 , -2.4609375 ]
+el intervalo es [ -2.59765625 , -2.4609375 ]
+el intervalo es [ -2.59765625 , -2.529296875 ]
+el intervalo es [ -2.59765625 , -2.5634765625 ]
+el intervalo es [ -2.58056640625 , -2.5634765625 ]
+el intervalo es [ -2.572021484375 , -2.5634765625 ]
+el intervalo es [ -2.572021484375 , -2.5677490234375 ]
+el intervalo es [ -2.56988525390625 , -2.5677490234375 ]
+el intervalo es [ -2.568817138671875 , -2.5677490234375 ]
+el intervalo es [ -2.5682830810546875 , -2.5677490234375 ]
+x 16 = -2.5682830810546875 es excelente aproximacion
+Tiempo: 0.006989002227783203 Segundos
+
+Por lo que nuestro programa no es capaz de detectar más de una raíz para un intervalo específico.
+
+3. El método de la bisección puede mejorarse usando la implementación de otros métodos numericos 
+que impliquen técnicas más efectivas y que por ejemplo permitan encontrar más de una raíz,
+como los métodos que no necesitan de un intervalo, pero pensando en soluciones algorítmicas
+podría utilizarse un ciclo que verificara de principio a fin todos los cambios de signo 
+al evaluar la función con los valores del intervalo, por ejemplo dividiendo por 10, o 100 los valores del intervalo 
+para lograr una buena aproximación de los resultados de f(x) y así poder ejecutar la función llamada bisección
+para cada uno de los cambios de signo encontrados.
